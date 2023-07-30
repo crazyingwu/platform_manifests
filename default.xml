@@ -3,6 +3,11 @@
   <remote  name="openvmi" fetch="https://github.com/DockDroid" revision="master" />
   <remote  name="anbox" fetch="https://github.com/anbox/" revision="anbox/master" />
 
+
+  <remote  name="google"
+           revision="refs/tags/android-7.1.1_r13"
+           fetch="https://android.googlesource.com/" />
+
   <remote  name="aosp"
            fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/"
            review="https://android-review.googlesource.com/" />
@@ -64,7 +69,7 @@
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" remote="google"/>
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk-fs" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
